@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import DataPreview from '../DataPreview'
-import BuyedTicket from '../BuyedTicket'
+import DataPreview from './DataPreview'
+import BuyedTicket from './BuyedTicket'
 
 
 function App() {
