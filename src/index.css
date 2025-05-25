@@ -7,3 +7,8 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@theme {
+  --color-primary: hsl(7, 86%, 67%);
+  --color-secondary: hsl(7, 71%, 60%);
+}
