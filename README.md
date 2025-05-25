@@ -1,5 +1,19 @@
-# React + Vite
+## Getting Started
+### Built with
 
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/) - JS library
+- [Yarn](https://yarnpkg.com/)
+- [Iconify](https://iconify.design/)
+
+````
+ yarn add --dev @iconify-icon/react
+````
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

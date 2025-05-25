@@ -1,18 +1,14 @@
-import { useState } from 'react'
-import DataPreview from './DataPreview'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DataPreview from "./DataPreview";
 import BuyedTicket from './BuyedTicket'
 
 
-function App() {
-
-
-  return (
-    <>
-      <DataPreview />
-      <BuyedTicket />
-
-    </>
-  )
-}
-
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<DataPreview />} />
+      <Route path="/ticket" element={<BuyedTicket />} />
+    </Routes>
+  </BrowserRouter>
+);
 export default App
