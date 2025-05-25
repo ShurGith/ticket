@@ -12,7 +12,7 @@ const BuyedTicket = () => {
   }
 
   const { formData, avatarPreview } = location.state;
-  //{avatarPreview}
+
   return (
     <div
       className="
@@ -44,7 +44,7 @@ const BuyedTicket = () => {
         </div>
         <p className="text-3xl text-white/40 -rotate-90 text-center absolute right-0 top-[45%]">60910#</p>
         <div className="flex items-center justify-center gap-2 mb-4">
-          <img src='/images/image-avatar.jpg' className="size-30 rounded-md object-cover" alt="Avatar" />
+          <img src={avatarPreview} className="size-30 rounded-md object-cover" alt="Avatar" />
           <div className="flex flex-col ml-4">
             <p className="text-xl font-bold">{formData.fullName}</p>
             <div className="flex gap-1">
