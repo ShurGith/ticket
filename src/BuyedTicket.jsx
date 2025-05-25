@@ -12,7 +12,7 @@ const BuyedTicket = () => {
   }
 
   const { formData, avatarPreview } = location.state;
-
+  //{avatarPreview}
   return (
     <div
       className="
@@ -37,16 +37,17 @@ const BuyedTicket = () => {
         <p className="w-1/2 px-12 text-center mt-12">We've emailed your ticket tu <span className="text-secondary">{formData.email}</span> and will send updates in the run apu to the event.</p>
       </div>
 
-      <div style={{ backgroundImage: "url('/images/pattern-ticket.svg')" }} className="w-2/6 h-2/8 bg-cover bg-center rounded-lg flex flex-col items-start pl-12 justify-between mt-12">
+      <div style={{ backgroundImage: "url('/images/pattern-ticket.svg')" }} className="w-140 h-70 bg-cover bg-center rounded-lg flex flex-col items-start pl-12 justify-between mt-24 relative">
         <div>
           <img src="/images/logo-full.svg" alt="logo" className="w-62 mt-8" />
           <p className="text-sm text-white/60 mt-2 ml-4 ">{moment('2025-07-01').format('dddd DD MMM YYYY')} / Austin, TX</p>
         </div>
-        <div className="flex items-center justify-center gap-2 mb-4 ">
-          <img src={avatarPreview} className="size-30 rounded-md object-cover" alt="Avatar" />
+        <p className="text-3xl text-white/40 -rotate-90 text-center absolute right-0 top-[45%]">60910#</p>
+        <div className="flex items-center justify-center gap-2 mb-4">
+          <img src='/images/image-avatar.jpg' className="size-30 rounded-md object-cover" alt="Avatar" />
           <div className="flex flex-col ml-4">
             <p className="text-xl font-bold">{formData.fullName}</p>
-            <div className="flex gap-4">
+            <div className="flex gap-1">
               <img src="/images/icon-github.svg" />
               <p className="text-lg font-bold">{formData.githubUser}</p>
             </div>

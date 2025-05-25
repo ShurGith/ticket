@@ -134,14 +134,14 @@ function DataPreview() {
       <img src="/images/pattern-circle.svg" alt="pattern circle" className="absolute top-[50%] right-[23%]" />
       <img src="/images/pattern-circle.svg" alt="pattern circle" className="absolute -top-[8%] left-[5%]" />
       <img src="/images/logo-full.svg" alt="logo" className="w-62 mt-8" />
-      <h1 className="text-5xl w-2/5 text-center font-bold mt-12">Your Journey to Coding Conf <br /> 2025 Starts Here!</h1>
-      <h3 className="mt-6">Secure your sopt at next year`'s biggest coding conference.</h3>
+      <h1 className="text-5xl/14 lg:w-2/5 text-center font-bold mt-12">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <h3 className="mt-6 text-center">Secure your sopt at next year`'s biggest coding conference.</h3>
 
-      <form className="w-1/4 flex flex-col justify-center items-center gap-6 text-white/70 z-10"
+      <form className="px-2 lg:w-1/4 flex flex-col justify-center items-center gap-6 text-white/70 z-10"
         onSubmit={handleSubmit}
         noValidate
       >
-        <div className="flex flex-col w-full justify-center items-start gap-2 mt-16">
+        <div className="flex border flex-col w-full justify-center items-start gap-2 mt-16">
           <label>Upload Avatar:</label>
           <div className={`${dragActive ? 'border-white text-blue-400' : 'border-white/50 text-white/50'} border-2 border-dashed text-center p-5 rounded-md cursor-pointer w-full`}
             onDragEnter={handleDrag}
